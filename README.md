@@ -7,7 +7,7 @@
 [![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/OpenXRay-AppImage)](https://github.com/pkgforge-dev/OpenXRay-AppImage/releases/latest)
 
 <p align="center">
-  <img src="https://github.com/OpenXRay/xray-16/blob/dev/misc/media/icons/64x64/openxray_soc.png?raw=true" width="128" />
+  <img src="https://raw.githubusercontent.com/OpenXRay/xray-16/dev/misc/media/icons/64x64/openxray_soc.png" width="128" />
 </p>
 
 
