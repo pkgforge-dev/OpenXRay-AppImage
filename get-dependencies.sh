@@ -34,4 +34,5 @@ cd ./xray-16
 mkdir bin && cd bin
 cmake .. -DCMAKE_BUILD_TYPE=Release
 make -j$(nproc)
+mv -v ${ARCH}/Release/xrGame.so ../../AppDir/bin
 mv -v xr_3da ../../AppDir/bin
