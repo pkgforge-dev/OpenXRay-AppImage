@@ -7,11 +7,13 @@ ARCH=$(uname -m)
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
-    cmake     \
-    libdecor  \
-    libtheora \
-    mimalloc  \
-    openal    \
+    cmake          \
+    libdecor       \
+    libtheora      \
+    mimalloc       \
+    openal         \
+    pipewire-audio \
+    pipewire-jack  \
     sdl2
 
 echo "Installing debloated packages..."
