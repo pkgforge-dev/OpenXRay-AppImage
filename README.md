@@ -19,8 +19,8 @@
 
 ### ⚠️ Place game assets within corresponding directory ⚠️
 ```
-Call of Pripyat (the default if no flag used, optionally use -cop flag): ~/.local/share/GSC Game World/S.T.A.L.K.E.R. - Call of Pripyat/_appdata_ 
-Clear Sky (use -cs flag): ~/.local/share/GSC Game World/S.T.A.L.K.E.R. - Clear Sky/ 
+Call of Pripyat (the default if no flag used, optionally use -cop flag): ~/.local/share/GSC Game World/S.T.A.L.K.E.R. - Call of Pripyat/_appdata_/
+Clear Sky (use -cs flag): ~/.local/share/GSC Game World/S.T.A.L.K.E.R. - Clear Sky/
 ```
 
 ---
