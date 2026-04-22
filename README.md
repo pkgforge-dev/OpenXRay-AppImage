@@ -17,6 +17,13 @@
 
 </div>
 
+### ⚠️ Place game assets within corresponding directory ⚠️
+```
+Call of Pripyat: ~/.local/share/GSC Game World/S.T.A.L.K.E.R. - Call of Pripyat/_appdata_ (it's the default if no flag used) use -cop flag 
+Clear Sky: ~/.local/share/GSC Game World/S.T.A.L.K.E.R. - Clear Sky/ use -cs flag
+Call of Chernobyl: ~/.local/share/GSC Game World/S.T.A.L.K.E.R. - Call of Chernobyl/ no flag needed
+```
+
 ---
 
 AppImage made using [sharun](https://github.com/VHSgunzo/sharun) and its wrapper [quick-sharun](https://github.com/pkgforge-dev/Anylinux-AppImages/blob/main/useful-tools/quick-sharun.sh), which makes it extremely easy to turn any binary into a portable package reliably without using containers or similar tricks. 
