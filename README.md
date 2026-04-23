@@ -29,7 +29,7 @@ languages(GOG version place /support/add/xenglish.db inside /languages/En/) leve
 ### inside `~/.local/share/GSC Game World/S.T.A.L.K.E.R. - Clear Sky/_appdata_/` and use `-cs` flag
 
 ### ⚠️ Call of Chernobyl isn't working on linux, [issue](https://github.com/OpenXRay/xray-16/issues/1856)
-### ⚠️ It may show a Fatal Error message or crash since it's compiled against unstable master branch, just keep choosing Continue and it works
+### ⚠️ It may show a Fatal Error message or crash since it's compiled against unstable master branch, just keep choosing Continue and it should work
 ### ⚠️ Game may be in Cyrillic script on first run. To change this, edit `g_language` and `g_language_ltx` to eng in `user.ltx` if desired
 
 ---
