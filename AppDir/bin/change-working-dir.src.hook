@@ -4,10 +4,10 @@ mkdir -p "$dir"
 
 # For S.T.A.L.K.E.R. - Call of Pripyat
 if [ ! -f "dir/S.T.A.L.K.E.R. - Call of Pripyat/_appdata_/patches/xpatch_openxray_plus.db" ]; then
-  cp -r "$APPDIR"/bin/ "$dir"
+  cp -r "$APPDIR"/bin/cop "$dir"
 fi
 
 # For S.T.A.L.K.E.R. - Clear Sky
 if [ ! -f "dir/S.T.A.L.K.E.R. - Clear Sky/gamedata/configs/openxray.ltx" ]; then
-  cp -r "$APPDIR"/bin/ "$dir"
+  cp -r "$APPDIR"/bin/cs "$dir"
 fi
