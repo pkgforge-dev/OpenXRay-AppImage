@@ -17,11 +17,9 @@
 
 </div>
 
-### ⚠️ Place game assets within corresponding directory ⚠️
-```
-Call of Pripyat (the default if no flag used, optionally use -cop flag): ~/.local/share/GSC Game World/S.T.A.L.K.E.R. - Call of Pripyat/_appdata_/
-Clear Sky (use -cs flag): ~/.local/share/GSC Game World/S.T.A.L.K.E.R. - Clear Sky/
-```
+### ⚠️ To play Call of Pripyat, place `levels` `localization` `mp` `patches` `resources` inside `~/.local/share/GSC Game World/S.T.A.L.K.E.R. - Call of Pripyat/_appdata_/` ⚠️
+### ⚠️ To play Clear Sky, place `levels` `localization` `mp` `patches` `resources` inside `~/.local/share/GSC Game World/S.T.A.L.K.E.R. - Clear Sky/` and use `-cs` flag ⚠️
+### ⚠️ Couldn't make Call of Chernobyl to work, [issue](https://github.com/OpenXRay/xray-16/issues/1856) but would be `-fsltx` flag `~/.local/share/GSC Game World/S.T.A.L.K.E.R. - Call of Chernobyl/fsgame.ltx` ⚠️
 ### ⚠️ It may show a Fatal Error message or crash since it's compiled against unstable master branch, just keep choosing Continue and it works ⚠️
 
 ---
