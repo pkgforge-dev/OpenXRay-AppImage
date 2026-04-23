@@ -32,20 +32,25 @@ git clone --recursive --depth 1 "$REPO" ./xray-16
 echo "$VERSION" > ~/version
 
 mkdir -p ./AppDir/bin/cs
-mkdir -p ./AppDir/bin/cop
 mkdir -p ./AppDir/bin/coc
 wget https://github.com/OpenXRay/xray-16/files/12452881/gamedata.zip # Clear Sky gamedata.zip
 bsdtar -xvf gamedata.zip 
 rm -f *.zip
+mv -v gamedata ./AppDir/bin/cs
 wget https://github.com/user-attachments/files/19356418/gamedata.zip  # Call of Chernobyl gamedata.zip
 bsdtar -xvf gamedata.zip 
 rm -f *.zip
-wget https://github.com/OpenXRay/xray-16/releases/download/latest-nightly/OpenXRay.Release.Master.Gold.64-bit.7z # Call of Pripyat files
-bsdtar -xvf OpenXRay.Release.Master.Gold.64-bit.7z
-rm -rf *.7z README.md License.txt bin
+mv -v gamedata ./AppDir/bin/coc
 
 cd ./xray-16
 mkdir bin && cd bin
 cmake .. -DCMAKE_BUILD_TYPE=Release
 make -j$(nproc)
 mv -v ${ARCH}/Release/* ../../AppDir/bin
+
+cd ../..
+mkdir -p ./AppDir/bin/cop
+cd ./AppDir/bin/cop
+wget https://github.com/OpenXRay/xray-16/releases/download/latest-nightly/OpenXRay.Release.Master.Gold.64-bit.7z # Call of Pripyat files
+bsdtar -xvf OpenXRay.Release.Master.Gold.64-bit.7z
+rm -rf *.7z README.md License.txt bin
