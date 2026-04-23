@@ -18,7 +18,7 @@
 </div>
 
 ### ⚠️
-## To play Call of Pripyat, place
+# To play Call of Pripyat, place
 ```
 levels localization mp patches resources
 ```
