@@ -1,14 +1,15 @@
 #!/bin/sh
 dir="$DATADIR/GSC Game World"
-mkdir -p "$dir"
+mkdir -p "$dir/S.T.A.L.K.E.R. - Call of Pripyat/_appdata_"
+mkdir -p "$dir/S.T.A.L.K.E.R. - Clear Sky"
 
 # For S.T.A.L.K.E.R. - Call of Pripyat
 if [ ! -f "dir/S.T.A.L.K.E.R. - Call of Pripyat/_appdata_/patches/xpatch_openxray_plus.db" ]; then
-  cp -rf "$APPDIR"/bin/cop/patches "dir/S.T.A.L.K.E.R. - Call of Pripyat/_appdata_"
-  cp "$APPDIR"/bin/cop/fsgame.ltx "dir/S.T.A.L.K.E.R. - Call of Pripyat"
+  cp -rf "$APPDIR/bin/cop/patches" "$dir/S.T.A.L.K.E.R. - Call of Pripyat/_appdata_/"
+  cp "$APPDIR/bin/cop/fsgame.ltx" "$dir/S.T.A.L.K.E.R. - Call of Pripyat/"
 fi
 
 # For S.T.A.L.K.E.R. - Clear Sky
 if [ ! -f "dir/S.T.A.L.K.E.R. - Clear Sky/gamedata/configs/openxray.ltx" ]; then
-  cp -r "$APPDIR"/bin/cs "$dir"
+  cp -r "$APPDIR/bin/cs/gamedata" "$dir/S.T.A.L.K.E.R. - Clear Sky/"
 fi
