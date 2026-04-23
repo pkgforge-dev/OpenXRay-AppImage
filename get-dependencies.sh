@@ -36,8 +36,10 @@ mkdir -p ./AppDir/bin/cop
 mkdir -p ./AppDir/bin/coc
 wget https://github.com/OpenXRay/xray-16/files/12452881/gamedata.zip # Clear Sky gamedata.zip
 bsdtar -xvf gamedata.zip 
+rm -f *.zip
 wget https://github.com/user-attachments/files/19356418/gamedata.zip  # Call of Chernobyl gamedata.zip
-
+bsdtar -xvf gamedata.zip 
+rm -f *.zip
 
 cd ./xray-16
 mkdir bin && cd bin
