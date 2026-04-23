@@ -40,9 +40,9 @@ rm -f *.zip
 wget https://github.com/user-attachments/files/19356418/gamedata.zip  # Call of Chernobyl gamedata.zip
 bsdtar -xvf gamedata.zip 
 rm -f *.zip
-wget https://github.com/OpenXRay/xray-16/releases/download/latest-nightly/OpenXRay.Release.Master.Gold.64-bit.7z # Call of Prypat files
+wget https://github.com/OpenXRay/xray-16/releases/download/latest-nightly/OpenXRay.Release.Master.Gold.64-bit.7z # Call of Pripyat files
 bsdtar -xvf OpenXRay.Release.Master.Gold.64-bit.7z
-rm -f *.7z
+rm -rf *.7z README.md License.txt bin
 
 cd ./xray-16
 mkdir bin && cd bin
