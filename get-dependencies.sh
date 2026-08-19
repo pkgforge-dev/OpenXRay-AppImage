@@ -18,11 +18,7 @@ echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano
 
-# Comment this out if you need an AUR package
-#make-aur-package PACKAGENAME
-
-# If the application needs to be manually built that has to be done down here
-echo "Making nightly build of OpenXRay..."
+echo "Building OpenXRay..."
 echo "---------------------------------------------------------------"
 REPO="https://github.com/OpenXRay/xray-16"
 VERSION="$(git ls-remote "$REPO" HEAD | cut -c 1-9 | head -1)"
