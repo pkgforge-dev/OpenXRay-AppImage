@@ -14,7 +14,6 @@ export DEPLOY_PULSE=1
 # Deploy dependencies
 quick-sharun ./AppDir/bin/*
 
-# Additional changes can be done in between here
 # this app has problems with other locales breaking physics
 echo 'LC_ALL=C.UTF-8' >> ./AppDir/.env
 echo 'ANYLINUX_DO_NOT_LOAD_LIBS=libpipewire*.so*:${ANYLINUX_DO_NOT_LOAD_LIBS}' >> ./AppDir/.env
