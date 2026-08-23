@@ -7,16 +7,15 @@ ARCH=$(uname -m)
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
-    cmake          \
-    libdecor       \
-    libtheora      \
-    mimalloc       \
-    openal         \
+    cmake     \
+    libtheora \
+    mimalloc  \
+    openal    \
     sdl2
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
-get-debloated-pkgs --add-common --prefer-nano
+get-debloated-pkgs --add-common --prefer-nano libdecor-mini
 
 echo "Building OpenXRay..."
 echo "---------------------------------------------------------------"
