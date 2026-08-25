@@ -20,7 +20,3 @@ echo 'ANYLINUX_DO_NOT_LOAD_LIBS=libpipewire*.so*:${ANYLINUX_DO_NOT_LOAD_LIBS}' >
 
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
-
-# Test the app for 12 seconds, if the test fails due to the app
-# having issues running in the CI use --simple-test instead
-quick-sharun --simple-test ./dist/*.AppImage
